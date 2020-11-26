@@ -4,28 +4,22 @@
 ; 3) go to Qt 64 folder, cd there and run windeployqt .../EmerCert.exe
 ; 4) use his script to generate installer
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
-#Based on 
-#define MyAppName "EmerCert"
-#define MyAppVersion "0.7"
-#define MyAppPublisher "Emercoin developers"
-#define MyAppURL "https://emercoin.com/"
-#define MyAppExeName "EmerCert.exe"
 
-define MyAppName "PrivateNess"
-define MyAppVersion "0.1"
-define MyAppPublisher "Emercoin & PrivateNess developers"
-define MyAppURL "https://emercoin.com/ & https://PrivateNess.Network"
-define MyAppExeName "PrivateNess.exe"
+#define MyAppName "PrivateCerts"
+#define MyAppVersion "0.1"
+#define MyAppPublisher "Emercoin & PrivateNess developers"
+#define MyAppURL "https://emercoin.com/ & https://PrivateNess.Network"
+#define MyAppExeName "PrivateCerts.exe"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 ; This is a new GUID for PrivateNess
-AppId={{FDDBD0B8-1F00-4BED-81AA-EC47F2D68CB0}
+AppId={{E8771920-43B4-4732-ADC6-B7421C7759C6}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
-;AppVerName={#MyAppName} {#MyAppVersion}
+AppVerName={#MyAppName} {#MyAppVersion}
 AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
@@ -36,45 +30,45 @@ AllowNoIcons=yes
 LicenseFile="..\LICENSE.txt"
 InfoBeforeFile="intro.txt"
 OutputDir="..\x64"
-OutputBaseFilename=favicon.ico"
+OutputBaseFilename="favicon.ico"
 Compression=lzma
 SolidCompression=yes
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
-Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"
-Name: "armenian"; MessagesFile: "compiler:Languages\Armenian.islu"
-Name: "brazilianportuguese"; MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
-Name: "catalan"; MessagesFile: "compiler:Languages\Catalan.isl"
-Name: "corsican"; MessagesFile: "compiler:Languages\Corsican.isl"
-Name: "czech"; MessagesFile: "compiler:Languages\Czech.isl"
-Name: "danish"; MessagesFile: "compiler:Languages\Danish.isl"
-Name: "dutch"; MessagesFile: "compiler:Languages\Dutch.isl"
-Name: "finnish"; MessagesFile: "compiler:Languages\Finnish.isl"
+;Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"
+;Name: "armenian"; MessagesFile: "compiler:Languages\Armenian.islu"
+;Name: "brazilianportuguese"; MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
+;Name: "catalan"; MessagesFile: "compiler:Languages\Catalan.isl"
+;Name: "corsican"; MessagesFile: "compiler:Languages\Corsican.isl"
+;Name: "czech"; MessagesFile: "compiler:Languages\Czech.isl"
+;Name: "danish"; MessagesFile: "compiler:Languages\Danish.isl"
+;Name: "dutch"; MessagesFile: "compiler:Languages\Dutch.isl"
+;Name: "finnish"; MessagesFile: "compiler:Languages\Finnish.isl"
 Name: "french"; MessagesFile: "compiler:Languages\French.isl"
-Name: "german"; MessagesFile: "compiler:Languages\German.isl"
-Name: "greek"; MessagesFile: "compiler:Languages\Greek.isl"
-Name: "hebrew"; MessagesFile: "compiler:Languages\Hebrew.isl"
-Name: "hungarian"; MessagesFile: "compiler:Languages\Hungarian.isl"
-Name: "italian"; MessagesFile: "compiler:Languages\Italian.isl"
-Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"
-Name: "nepali"; MessagesFile: "compiler:Languages\Nepali.islu"
-Name: "norwegian"; MessagesFile: "compiler:Languages\Norwegian.isl"
-Name: "polish"; MessagesFile: "compiler:Languages\Polish.isl"
-Name: "portuguese"; MessagesFile: "compiler:Languages\Portuguese.isl"
-Name: "scottishgaelic"; MessagesFile: "compiler:Languages\ScottishGaelic.isl"
-Name: "serbiancyrillic"; MessagesFile: "compiler:Languages\SerbianCyrillic.isl"
-Name: "serbianlatin"; MessagesFile: "compiler:Languages\SerbianLatin.isl"
-Name: "slovenian"; MessagesFile: "compiler:Languages\Slovenian.isl"
-Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
-Name: "turkish"; MessagesFile: "compiler:Languages\Turkish.isl"
-Name: "ukrainian"; MessagesFile: "compiler:Languages\Ukrainian.isl"
+;Name: "german"; MessagesFile: "compiler:Languages\German.isl"
+;Name: "greek"; MessagesFile: "compiler:Languages\Greek.isl"
+;Name: "hebrew"; MessagesFile: "compiler:Languages\Hebrew.isl"
+;Name: "hungarian"; MessagesFile: "compiler:Languages\Hungarian.isl"
+;Name: "italian"; MessagesFile: "compiler:Languages\Italian.isl"
+;Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"
+;Name: "nepali"; MessagesFile: "compiler:Languages\Nepali.islu"
+;Name: "norwegian"; MessagesFile: "compiler:Languages\Norwegian.isl"
+;Name: "polish"; MessagesFile: "compiler:Languages\Polish.isl"
+;Name: "portuguese"; MessagesFile: "compiler:Languages\Portuguese.isl"
+;Name: "scottishgaelic"; MessagesFile: "compiler:Languages\ScottishGaelic.isl"
+;Name: "serbiancyrillic"; MessagesFile: "compiler:Languages\SerbianCyrillic.isl"
+;Name: "serbianlatin"; MessagesFile: "compiler:Languages\SerbianLatin.isl"
+;Name: "slovenian"; MessagesFile: "compiler:Languages\Slovenian.isl"
+;Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
+;Name: "turkish"; MessagesFile: "compiler:Languages\Turkish.isl"
+;Name: "ukrainian"; MessagesFile: "compiler:Languages\Ukrainian.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "..\x64\Release\EmerCert.exe"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "..\x64\Release\PrivateCerts.exe"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 Source: "..\x64\Release\libssl-1_1.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\x64\Release\libcrypto-1_1.dll"; DestDir: "{app}"; Flags: ignoreversion

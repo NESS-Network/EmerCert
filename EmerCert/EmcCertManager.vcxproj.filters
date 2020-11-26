@@ -281,6 +281,9 @@
     <ClCompile Include="DpoUseCaseScheme.cpp">
       <Filter>DPO</Filter>
     </ClCompile>
+    <ClCompile Include="QtWidgetsClass.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Settings.h">
@@ -498,5 +501,15 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="EmerCert.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="QtWidgetsClass.h">
+      <Filter>main</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="QtWidgetsClass.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
   </ItemGroup>
 </Project>
