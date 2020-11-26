@@ -4,18 +4,25 @@
 ; 3) go to Qt 64 folder, cd there and run windeployqt .../EmerCert.exe
 ; 4) use his script to generate installer
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
-
+#Based on 
 #define MyAppName "EmerCert"
 #define MyAppVersion "0.7"
 #define MyAppPublisher "Emercoin developers"
 #define MyAppURL "https://emercoin.com/"
 #define MyAppExeName "EmerCert.exe"
 
+define MyAppName "PrivateNess"
+define MyAppVersion "0.1"
+define MyAppPublisher "Emercoin & PrivateNess developers"
+define MyAppURL "https://emercoin.com/ & https://PrivateNess.Network"
+define MyAppExeName "PrivateNess.exe"
+
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{793D3FCE-2A7D-448A-8F30-9A72158974BD}
+; This is a new GUID for PrivateNess
+AppId={{FDDBD0B8-1F00-4BED-81AA-EC47F2D68CB0}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -27,10 +34,9 @@ DefaultDirName={pf64}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 LicenseFile="..\LICENSE.txt"
-; InfoBeforeFile="intro.txt"
+InfoBeforeFile="intro.txt"
 OutputDir="..\x64"
-OutputBaseFilename=EmerCert {#MyAppVersion} setup 64bit
-SetupIconFile="..\EmerCert\EmcCert.ico"
+OutputBaseFilename=favicon.ico"
 Compression=lzma
 SolidCompression=yes
 
