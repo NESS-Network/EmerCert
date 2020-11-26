@@ -11,11 +11,18 @@
 #define MyAppURL "https://emercoin.com/"
 #define MyAppExeName "EmerCert.exe"
 
+define MyAppName "PrivateNess"
+define MyAppVersion "0.1"
+define MyAppPublisher "Emercoin & PrivateNess developers"
+define MyAppURL "https://emercoin.com/ & https://PrivateNess.Network"
+define MyAppExeName "PrivateNess.exe"
+
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{793D3FCE-2A7D-448A-8F30-9A72158974BD}
+; This is a new GUID for PrivateNess
+AppId={{FDDBD0B8-1F00-4BED-81AA-EC47F2D68CB0}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -27,10 +34,10 @@ DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 LicenseFile="..\LICENSE.txt"
-; InfoBeforeFile="intro.txt"
+InfoBeforeFile="intro.txt"
 OutputDir="..\Win32"
 OutputBaseFilename=EmerCert {#MyAppVersion} setup 32bit
-SetupIconFile="..\EmerCert\EmcCert.ico"
+SetupIconFile="..\EmerCert\favicon.ico"
 Compression=lzma
 SolidCompression=yes
 
